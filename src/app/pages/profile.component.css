@@ -1,0 +1,39 @@
+
+.cv-header {
+  background-image: url('../../assets/img/profile.svg');
+  background-size: cover;
+}
+
+.star-header {
+  background-image: url('../../assets/img/ic_star_border_black_48px.svg');
+  background-size: cover;
+}
+
+.skill {
+  margin-right: 2em;
+  white-space: nowrap
+}
+
+.poster {
+  text-align: center;
+  align-content: center;
+}
+
+.profile {
+  box-shadow: 0 0 12px 0 #888888;
+  margin: 1em;
+  max-width:200px;
+}
+
+.mat-list-icon {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+@media (min-width: 600px) {
+  .fixed {
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 1;
+    top: 78px;
+  }
+}

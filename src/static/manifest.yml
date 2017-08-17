@@ -1,0 +1,7 @@
+applications:
+- memory: 64M
+  instances: 2
+  buildpack: staticfile_buildpack
+  name: bx-uguraydin-profile
+  host: bx-uguraydin-profile
+  domain: mybluemix.net

@@ -1,0 +1,23 @@
+<md-toolbar class="mat-elevation-z6 sticky" color="primary">
+  <!--init own App code-by-color #76C8FF-->
+  <span class="title ">UGURAYDIN</span>
+  <nav md-tab-nav-bar aria-label="navigation links">
+    <a md-tab-link
+       *ngFor="let routeLink of routeLinks"
+       [routerLink]="routeLink.link"
+       [active]="activeLink === routeLink.link"
+       (click)="activeLink= routeLink.link">
+      {{routeLink.label}}
+    </a>
+  </nav>
+  <span class="example-spacer "></span>
+  <button md-button class="" [mdMenuTriggerFor]="appMenu">
+    <md-icon>menu</md-icon>
+    Menu
+  </button>
+</md-toolbar>
+
+<md-menu #appMenu="mdMenu">
+  <button md-menu-item> Settings</button>
+  <button md-menu-item> Help</button>
+</md-menu>
